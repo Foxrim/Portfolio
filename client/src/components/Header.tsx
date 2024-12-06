@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import styles from "../styles/Header.module.css";
 import Menu from "./Menu";
 
-import linkedin from "../assets/images/Linkedin-green.png";
-import github from "../assets/images/github-green.png";
+import linkedin from "../assets/images/Linkedin-green-white.png";
+import github from "../assets/images/github-green-white.png";
 import twitter from "../assets/images/twitter-green.png";
 
 export default function Header() {
@@ -46,16 +46,16 @@ export default function Header() {
         </span>
         <div className={styles.networksDesktop}>
           <a href="https://github.com/Foxrim" className={styles.github}>
-            <img src={github} alt="" />
+            <img src={github} alt="github" />
           </a>
           <a
             href="https://www.linkedin.com/in/flavien-rousseau-444bbb199/"
             className={styles.linkedin}
           >
-            <img src={linkedin} alt="" />
+            <img src={linkedin} alt="linkedin" />
           </a>
           <a href="https://x.com/TheFoxrim" className={styles.twitter}>
-            <img src={twitter} alt="" />
+            <img src={twitter} alt="twitter" />
           </a>
           <span
             className={`${"material-symbols-outlined"} ${styles.themeDesktop}`}
