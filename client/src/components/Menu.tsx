@@ -20,7 +20,7 @@ export default function Menu({ handleClick }: HeaderProps) {
           </span>
         </div>
         <div className={styles.menuLink}>
-          <Link to="/apropos">
+          <Link to="/a-propos">
             <h3>À propos</h3>
           </Link>
           <Link to="/projets">
