@@ -1,0 +1,202 @@
+{
+  "projets": [
+    {
+      "id": 1,
+      "image": "../assets/images/background/LePetitFrappe.webp",
+      "title": "Le Petit Frappé",
+      "description": "Premier projet de groupe de la formation, avec un délai de 2 semaines pour le réaliser.",
+      "objectif": "Réaliser un site en groupe avec pour thème choisi 'Bonnes adresses pour manger'.",
+      "language": [
+        {
+          "name": "HTML",
+          "icon": "../assets/images/front-end/html.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "../assets/images/front-end/css.png"
+        },
+        {
+          "name": "Javascript",
+          "icon": "../assets/images/back-end/javascript.png"
+        },
+        {
+          "name": "Github",
+          "icon": "../assets/images/soft-skills/github.png"
+        }
+      ],
+      "date": "10/2024",
+      "link": "https://wildcodeschool-2024-09.github.io/JS-RemoteFR-Vendangeurs-P1-Les-Frappes/"
+    },
+    {
+      "id": 2,
+      "image": "../assets/images/background/JapanAnimation.webp",
+      "title": "JapanAnimation",
+      "description": "Projet réalisé durant les premières semaines de la formation.",
+      "objectif": "Réaliser un site seul en seulement quelques heures. Le choix du thème était libre.",
+      "language": [
+        {
+          "name": "HTML",
+          "icon": "../assets/images/front-end/html.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "../assets/images/front-end/css.png"
+        }
+      ],
+      "date": "10/2024",
+      "link": "https://japan-animation.netlify.app/"
+    },
+    {
+      "id": 3,
+      "image": "../assets/images/background/CardEtienne.webp",
+      "title": "Étienne Robial",
+      "description": "Exercice réalisé afin de déterminer notre niveau de compréhension du CSS.",
+      "objectif": "Réaliser une card sur l'une des personnalités listées et en faire une mini-biographie.",
+      "language": [
+        {
+          "name": "HTML",
+          "icon": "../assets/images/front-end/html.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "../assets/images/front-end/css.png"
+        }
+      ],
+      "date": "09/2024",
+      "link": "https://lambent-kitten-7da7df.netlify.app/"
+    },
+    {
+      "id": 4,
+      "image": "../assets/images/background/bienvenue-a-bord.webp",
+      "title": "Bienvenue à bord",
+      "description": "Première quête de la formation.",
+      "objectif": "Recopier à l'identique une maquette préfaite en usant uniquement de l'HTML et du CSS",
+      "language": [
+        {
+          "name": "HTML",
+          "icon": "../assets/images/front-end/html.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "../assets/images/front-end/css.png"
+        }
+      ],
+      "date": "09/2024"
+    },
+    {
+      "id": 5,
+      "image": "../assets/images/background/pokedule.webp",
+      "title": "Pokédule",
+      "description": "Second projet de groupe de la formation, avec un délai de 4 semaines pour le réaliser.",
+      "objectif": "Réaliser un site en groupe en utilisant la méthode agile. Également, importer des données depuis une API. Le thème du site était libre.",
+      "language": [
+        {
+          "name": "CSS",
+          "icon": "../assets/images/front-end/css.png"
+        },
+        {
+          "name": "HTML",
+          "icon": "../assets/images/front-end/html.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "../assets/images/back-end/typescript.png"
+        },
+        {
+          "name": "React",
+          "icon": "../assets/images/front-end/react.png"
+        },
+        {
+          "name": "Scrum Agile",
+          "icon": "../assets/images/soft-skills/scrum.png"
+        },
+        {
+          "name": "Github",
+          "icon": "../assets/images/soft-skills/github.png"
+        }
+      ],
+      "date": "11/2024",
+      "link": "https://pokedule.vercel.app/"
+    }
+  ],
+
+  "skills": [
+    {
+      "front": [
+        {
+          "name": "CSS",
+          "icon": "../assets/images/front-end/css.png"
+        },
+        {
+          "name": "HTML",
+          "icon": "../assets/images/front-end/html.png"
+        },
+        {
+          "name": "Javascript",
+          "icon": "../assets/images/front-end/javascript.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "../assets/images/front-end/typescript.png"
+        },
+        {
+          "name": "React",
+          "icon": "../assets/images/front-end/react.png"
+        }
+      ],
+
+      "back": [
+        {
+          "name": "Mysql",
+          "icon": "../assets/images/back-end/mysql.png"
+        },
+        {
+          "name": "Express",
+          "icon": "../assets/images/back-end/express.png"
+        },
+        {
+          "name": "Javascript",
+          "icon": "../assets/images/back-end/javascript.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "../assets/images/back-end/typescript.png"
+        }
+      ],
+
+      "soft": [
+        {
+          "name": "Figma",
+          "icon": "../assets/images/soft-skills/figma.png"
+        },
+        {
+          "name": "GitHub",
+          "icon": "../assets/images/soft-skills/github.png"
+        },
+        {
+          "name": "GitHub Copilot",
+          "icon": "../assets/images/soft-skills/github-copilot.png"
+        },
+        {
+          "name": "Node.js",
+          "icon": "../assets/images/soft-skills/node-js.png"
+        },
+        {
+          "name": "Scrum Agile",
+          "icon": "../assets/images/soft-skills/scrum.png"
+        },
+        {
+          "name": "VS Code",
+          "icon": "../assets/images/soft-skills/visual-code-studio.png"
+        }
+      ],
+
+      "hard": [
+        {
+          "name": "Git",
+          "icon": "../assets/images/hard-skills/git.png"
+        }
+      ]
+    }
+  ]
+}
