@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <PageContact />,
       },
       {
-        path: "/apropos",
+        path: "/a-propos",
         element: <PageAPropos />,
       },
     ],
