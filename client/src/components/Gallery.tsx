@@ -84,6 +84,43 @@ export default function Gallery({ onProjectSelect }: GalleryProps) {
 
   return (
     <>
+      {data.projets.map((projet) => {
+        return (
+          selectedById === projet.id && (
+            <section key={projet.id} className={styles.descriptionGallery}>
+              <div className={styles.projetTitle}>
+                <h2>{projet.title}</h2>
+              </div>
+              <div className={styles.description}>
+                <p>Description :</p>
+                <p>{projet.description}</p>
+                <p>Objectifs :</p>
+                <p>{projet.objectif}</p>
+              </div>
+              <div className={styles.iconContainer}>
+                {projet.language.map((language) => {
+                  return (
+                    <figure key={language.name}>
+                      <img src={language.icon} alt={language.name} />
+                    </figure>
+                  );
+                })}
+              </div>
+              <div className={styles.link}>
+                <a
+                  href={mostRecentProject?.link}
+                  key={`link-${mostRecentProject.id}`}
+                  className={styles.link_showcase}
+                >
+                  Lien
+                </a>
+                <hr />
+              </div>
+            </section>
+          )
+        );
+      })}
+
       <div className={styles.gallery} ref={scrollRef}>
         {canScrollUp && (
           <div

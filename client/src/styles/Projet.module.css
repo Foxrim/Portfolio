@@ -14,7 +14,7 @@
   .degradeTop {
     position: absolute;
     width: 100vw;
-    height: 20%;
+    height: 40%;
     border: none;
     top: 0;
     background: linear-gradient(var(--main-brown-dark), rgba(255, 255, 255, 0));
@@ -23,7 +23,7 @@
   .degradeBottom {
     position: absolute;
     width: 100vw;
-    height: 20%;
+    height: 40%;
     border: none;
     bottom: 0;
     background: linear-gradient(rgba(255, 255, 255, 0), var(--main-brown-dark));
@@ -35,5 +35,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    @media screen and (min-width: 980px) {
+      display: grid;
+      grid-template-columns: 67% 33%;
+    }
   }
 }

@@ -15,6 +15,7 @@
 
   @media screen and (min-width: 980px) {
     width: 20rem;
+    grid-column: 2 / 3;
   }
 
   .scrollUp {
@@ -30,6 +31,7 @@
     border-radius: 10px 0 0 0;
     cursor: pointer;
     box-shadow: 0px 8px var(--main-white);
+    z-index: 15;
 
     @media screen and (min-width: 980px) {
       width: 20rem;
@@ -288,6 +290,76 @@
       img {
         height: 100%;
       }
+    }
+  }
+}
+
+.descriptionGallery {
+  width: 60%;
+  height: 87%;
+  margin: auto;
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
+  .projetTitle {
+    width: 100%;
+    height: 4.5rem;
+    background-color: var(--main-brown-transparent);
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 8px var(--main-green-dark);
+    font-size: 25px;
+    margin-bottom: 3rem;
+    color: var(--main-green-dark);
+  }
+
+  .description {
+    min-height: 20%;
+    width: 100%;
+    background-color: var(--main-brown-transparent);
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    box-shadow: 0px -8px var(--main-green-dark);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 1rem;
+  }
+
+  .iconContainer {
+    display: flex;
+    gap: 0.5rem;
+    figure {
+      height: 50px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .link {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    position: absolute;
+    bottom: 13vh;
+
+    a {
+      background-color: var(--main-green-dark);
+      color: var(--main-white);
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px 10px 0 0;
+      font-size: 25px;
+      padding: 0.25rem 0;
+    }
+    hr {
+      width: 100%;
+      border: none;
+      background-color: var(--main-white);
+      height: 1rem;
+      border-radius: 0 0 10px 10px;
     }
   }
 }
