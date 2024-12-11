@@ -1,0 +1,293 @@
+.gallery {
+  z-index: 10;
+  height: 70vh;
+  width: 80vw;
+  background-color: var(--main-brown-transparent);
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+
+  @media screen and (min-width: 980px) {
+    width: 20rem;
+  }
+
+  .scrollUp {
+    position: fixed;
+    top: 17.7vh;
+    height: 4rem;
+    width: 80%;
+    margin-left: -1rem;
+    background-color: var(--main-brown-transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 0;
+    cursor: pointer;
+    box-shadow: 0px 8px var(--main-white);
+
+    @media screen and (min-width: 980px) {
+      width: 20rem;
+    }
+
+    span {
+      rotate: -90deg;
+      font-size: 40px;
+    }
+  }
+
+  .scrollDown {
+    position: fixed;
+    bottom: 12.2vh;
+    margin-left: -1rem;
+    height: 4rem;
+    width: 80%;
+    background-color: var(--main-brown-transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+    cursor: pointer;
+    box-shadow: 0px -8px var(--main-white);
+
+    @media screen and (min-width: 980px) {
+      width: 20rem;
+    }
+
+    span {
+      rotate: 90deg;
+      font-size: 40px;
+    }
+  }
+
+  .timeline {
+    min-height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-green-dark);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 8px var(--main-brown-dark);
+    margin-bottom: 1rem;
+    cursor: default;
+  }
+
+  .showcase {
+    min-height: 3.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: var(--main-green-dark-transparent);
+    padding-left: 10px;
+    cursor: pointer;
+    position: relative;
+
+    h3 {
+      margin: auto;
+      font-size: 22px;
+    }
+
+    .add_2 {
+      margin: auto;
+      height: 35px;
+      width: 35px;
+      border-radius: 6px;
+      background-color: var(--main-white);
+      color: var(--main-brown-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: xx-large;
+      cursor: pointer;
+      z-index: 50;
+    }
+
+    @media screen and (min-width: 980px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .add_2 {
+        display: none;
+      }
+    }
+  }
+
+  .showcase_off {
+    min-height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-green-dark-transparent);
+    padding-left: 10px;
+
+    h3 {
+      cursor: pointer;
+      margin: auto;
+      font-size: 22px;
+    }
+  }
+
+  .link_showcase {
+    width: 100%;
+    min-height: 2.5rem;
+    background-color: var(--main-white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    font-size: 22px;
+    font-family: "KoHo-semi-bold", "Courier New", Courier, monospace;
+    color: var(--main-green-dark);
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  .link_showcase_off {
+    border: none;
+    width: 100%;
+    min-height: 1rem;
+    background-color: var(--main-white);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 0.5rem;
+  }
+
+  .timelineContainer {
+    width: 100%;
+  }
+}
+
+.gallery::-webkit-scrollbar {
+  background-color: var(--main-brown-scroll-dark);
+  width: 10px;
+  height: 0px;
+  z-index: 10;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background-color: var(--main-brown-scroll-light);
+  border: 2px solid var(--main-brown-scroll-light);
+  z-index: 10;
+}
+
+.projetModal {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: -13vh;
+  right: 0;
+  background-color: var(--main-brown-dark-tranparent);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .projetModalTitle {
+    width: 80%;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--main-brown-light-desc);
+    color: var(--main-green-dark);
+    box-shadow: 0px 8px var(--main-green-dark);
+    display: grid;
+    grid-template-columns: 80% 20%;
+    min-height: 3rem;
+    margin-bottom: 2rem;
+
+    h2 {
+      margin: auto;
+      cursor: default;
+      padding-left: 20%;
+      font-size: 30px;
+    }
+
+    span {
+      margin: auto;
+      cursor: pointer;
+      font-size: 30px;
+    }
+  }
+
+  .projectModalDescritpion {
+    min-height: 2rem;
+    max-height: 50vh;
+    width: 80%;
+    box-shadow: 0px -8px var(--main-green-dark);
+    background-color: var(--main-brown-light-desc);
+    border-radius: 0 0 10px 10px;
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1rem;
+    overflow: scroll;
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 20px;
+    }
+  }
+
+  .projectModalDescritpion::-webkit-scrollbar {
+    background-color: var(--main-brown-scroll-dark);
+    width: 10px;
+    height: 0px;
+  }
+
+  .projectModalDescritpion::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .projectModalDescritpion::-webkit-scrollbar-thumb {
+    background-color: var(--main-brown-scroll-light);
+    border: 2px solid var(--main-brown-scroll-light);
+  }
+
+  .projectModalLink {
+    min-height: 3rem;
+    width: 80%;
+    background-color: var(--main-green-dark);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--main-white);
+  }
+
+  hr {
+    width: 80%;
+    border: none;
+    background-color: var(--main-white);
+    height: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .iconContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-bottom: 1rem;
+
+    figure {
+      height: 50px;
+      margin-bottom: 0.5rem;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

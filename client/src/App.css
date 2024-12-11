@@ -10,6 +10,29 @@ body {
   line-height: 1.7;
   color: #eee;
   margin: 0;
+  font-family: "KoHo-semi-bold", "Courier New", Courier, monospace;
+}
+
+@font-face {
+  font-family: "KoHo-semi-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/koho/v16/K2FxfZ5fmddNPpUxaJnzJw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "KoHo-bold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/koho/v16/K2FxfZ5fmddNPvEwaJnzJw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 :root {
@@ -21,7 +44,7 @@ body {
 
   --main-brown-background: #725d2b;
 
-  --main-brown-transparent: #dbc184b0;
+  --main-brown-transparent: #dbc1848e;
   --main-brown-light-transparent: #c9b78c4d;
   --main-brown-dark-tranparent: #4f411fc9;
 

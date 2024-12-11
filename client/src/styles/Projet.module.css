@@ -1,0 +1,39 @@
+.projetPage {
+  height: 79.5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.7s ease-in-out, background-color 0.7s
+    ease-in-out;
+
+  .degradeTop {
+    position: absolute;
+    width: 100vw;
+    height: 20%;
+    border: none;
+    top: 0;
+    background: linear-gradient(var(--main-brown-dark), rgba(255, 255, 255, 0));
+  }
+
+  .degradeBottom {
+    position: absolute;
+    width: 100vw;
+    height: 20%;
+    border: none;
+    bottom: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), var(--main-brown-dark));
+  }
+
+  .galleryContainer {
+    height: 79.5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
