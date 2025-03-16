@@ -1,6 +1,6 @@
 .projects {
   width: 100vw;
-  margin-top: 1rem;
+  margin: 1rem 0 1.2rem 0;
   padding: 0 2rem;
 
   display: flex;
@@ -8,6 +8,10 @@
   align-items: center;
 
   gap: 0.5rem;
+
+  .button {
+      width: 100%;
+  }
 
   button {
     width: 100%;

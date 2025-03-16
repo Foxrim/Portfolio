@@ -9,4 +9,9 @@
     margin-top: 3.5rem;
 
     cursor: pointer;
+
+    a {
+        color: var(--font-color-white);
+        text-decoration: none;
+    }
 }
