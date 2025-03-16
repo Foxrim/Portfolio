@@ -10,8 +10,6 @@ body {
   font-weight: var(--font-weight);
   font-style: var(--regular-style);
   color: var(--font-color-white);
-
-  overflow-x: hidden;
 }
 
 :root {

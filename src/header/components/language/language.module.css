@@ -16,11 +16,17 @@
     p {
         font-size: 30px;
         margin: 0 2rem 0 0;
+
+        color: var(--font-color-grey);
         
         cursor: pointer;
     }
 
     .fr {
         margin-top: .5rem;
+    }
+
+    .actif {
+        color: var(--font-color-white)
     }
 }

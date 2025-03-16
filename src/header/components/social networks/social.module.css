@@ -1,14 +1,13 @@
 .social {
   width: 100vw;
   padding: 0 4rem 0 2rem;
-  margin-top: 1.5rem;
 
   display: grid;
   grid-template-columns: 33% 33% 33%;
 
   gap: 1rem;
 
-  button {
+  a {
     background-color: transparent;
     border: 2px solid var(--border-color-white);
     border-radius: 50px;
