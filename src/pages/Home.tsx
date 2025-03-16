@@ -1,9 +1,7 @@
-import Header from "../header/Header.module";
-
 export default function Home() {
   return (
     <>
-     <Header/>
+     <h3>Home</h3>
     </>
   );
 }
