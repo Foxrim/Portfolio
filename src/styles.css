@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  /* BACKGROUND */
+  --background-color-black: #131313;
+  --background-color-grey: #49494981;
+
+  /* STYLES */
+  --style-color: #ce7f00;
+
+  /* FONTS */
+  --font-color-white: #ffffff;
+  --font-color-grey: #a7a7a7;
+  --font-color-black: #000000;
+
+  /* BORDER */
+  --border-color-white: #ffffff;
+  --border-color-grey: #484848;
+}
+
+/* FONTS */
+
+.atkinson-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
