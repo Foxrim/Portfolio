@@ -1,0 +1,9 @@
+.name {
+    font-size: 30px;
+    font-weight: var(--font-weight);
+    padding-left: 2rem;
+    max-width: 7ch;
+    line-height: 1.4;
+
+    cursor: default;
+}

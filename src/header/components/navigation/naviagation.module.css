@@ -1,0 +1,12 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.65rem;
+
+    font-size: 24px;
+
+    margin-top: 3.5rem;
+
+    cursor: pointer;
+}
