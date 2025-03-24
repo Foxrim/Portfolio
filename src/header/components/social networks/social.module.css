@@ -7,11 +7,21 @@
 
   gap: 1rem;
 
+  @media screen and (min-width: 880px) and (max-width: 1480px) {
+    padding: 0 15vw;
+  }
+
+  @media screen and (min-width: 1480px) {
+    padding: 0 30%;
+    margin-top: 2rem;
+  }
+
   a {
     background-color: transparent;
     border: 2px solid var(--border-color-white);
     border-radius: 50px;
     height: 47px;
+    text-decoration: none;
 
     display: flex;
     justify-content: center;
@@ -19,11 +29,31 @@
 
     cursor: pointer;
 
+    @media screen and (min-width: 880px) {
+      margin: auto;
+      width: 13rem;
+    }
+
     figure {
       height: 30px;
 
       img {
         height: 100%;
+
+        @media screen and (min-width: 880px) {
+          margin: 0 0 0 -1.5rem;
+        }
+      }
+    }
+
+    p {
+      color: var(--font-color-grey);
+      font-style: var(--italic-style);
+
+      margin: 0 0 0 -1.5rem;
+
+      @media screen and (max-width: 880px) {
+        display: none;
       }
     }
   }

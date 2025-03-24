@@ -5,7 +5,7 @@ import linkedin from "../../../assets/Linkedin.png";
 import mail from "../../../assets/Mail.png";
 import { NavLink } from "react-router";
 
-import data from "../../../data/data.json"
+import data from "../../../data/data.json";
 
 export default function Social() {
   return (
@@ -14,16 +14,19 @@ export default function Social() {
         <figure>
           <img src={github} alt="Logo github" />
         </figure>
+        <p>{data.contacts[0].name}</p>
       </a>
       <a href={data.contacts[1].link}>
         <figure>
           <img src={linkedin} alt="Logo Linkedin" />
         </figure>
+        <p>{data.contacts[1].name}</p>
       </a>
       <NavLink to="/contacts">
-          <figure>
-            <img src={mail} alt="Logo mail" />
-          </figure>
+        <figure>
+          <img src={mail} alt="Logo mail" />
+        </figure>
+        <p>Mail</p>
       </NavLink>
     </nav>
   );

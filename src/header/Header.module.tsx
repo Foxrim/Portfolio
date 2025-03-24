@@ -14,7 +14,7 @@ export default function Header() {
   const location = useLocation();
 
   const path = location.pathname;
-  
+
   useEffect(() => {
     setIsHome(!(path === "/projets" || path === "/contacts"));
   }, [path]);

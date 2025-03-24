@@ -6,7 +6,7 @@ import Home from "./pages/Home.tsx";
 import Projets from "./pages/Projets.tsx";
 import Contacts from "./pages/Contacts.tsx";
 
-import './i18n';
+import "./i18n";
 
 const router = createBrowserRouter([
   {
