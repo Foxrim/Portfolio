@@ -7,12 +7,14 @@ import Projects from "./components/projects/Projects.component";
 import Social from "./components/social networks/Social.component";
 
 import styles from "./header.module.css";
+import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const [isHome, setIsHome] = useState<boolean>(true);
+  const location = useLocation();
 
   const path = location.pathname;
-
+  
   useEffect(() => {
     setIsHome(!(path === "/projets" || path === "/contacts"));
   }, [path]);
