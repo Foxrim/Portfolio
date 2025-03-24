@@ -1,0 +1,56 @@
+.projects {
+  width: 100vw;
+  margin: 1rem 0 1.2rem 0;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  @media screen and (min-width: 880px) and (max-width: 1480px) {
+    padding: 0 12vw;
+  }
+
+  @media screen and (min-width: 1480px) {
+    max-width: 30rem;
+
+    position: absolute;
+    top: 14rem;
+    left: 52%;
+    transform: translate(50%, 50%);
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+
+    font-size: 30px;
+    color: var(--font-color-black);
+
+    cursor: pointer;
+  }
+
+  figure {
+    font-size: 47px;
+    color: var(--font-color-black);
+    background-color: var(--background-color-white);
+    border-radius: 50%;
+
+    height: 47px;
+    min-width: 47px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+  }
+}

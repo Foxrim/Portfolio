@@ -5,12 +5,26 @@
 
 body {
   margin: 0;
+  background-color: var(--background-color-black);
+  font-family: var(--atkinson-regular);
+  font-weight: var(--font-weight);
+  font-style: var(--regular-style);
+  color: var(--font-color-white);
+
+  p {
+    font-size: 24px;
+
+    @media screen and (min-width: 880px) {
+      font-size: 30px;
+    }
+  }
 }
 
 :root {
   /* BACKGROUND */
   --background-color-black: #131313;
   --background-color-grey: #49494981;
+  --background-color-white: #ffffff;
 
   /* STYLES */
   --style-color: #ce7f00;
@@ -18,23 +32,15 @@ body {
   /* FONTS */
   --font-color-white: #ffffff;
   --font-color-grey: #a7a7a7;
-  --font-color-black: #000000;
+  --font-color-black: #1e1e1e;
 
   /* BORDER */
   --border-color-white: #ffffff;
   --border-color-grey: #484848;
-}
 
-/* FONTS */
-
-.atkinson-regular {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.atkinson-italic {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+  /* FONTS */
+  --atkinson-regular: "Atkinson Hyperlegible", sans-serif;
+  --font-weight: 400;
+  --regular-style: normal;
+  --italic-style: italic;
 }
