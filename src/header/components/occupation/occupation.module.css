@@ -6,7 +6,7 @@
 
   cursor: default;
 
-  @media screen and (min-width: 880px) {   
+  @media screen and (min-width: 880px) {
     padding: 0 11.8vw;
     margin-top: 2rem;
 
@@ -32,7 +32,7 @@
     }
   }
 
-  @media screen and (min-width:1480px) {
+  @media screen and (min-width: 1480px) {
     .title_desktop_1 {
       font-size: 150px;
 

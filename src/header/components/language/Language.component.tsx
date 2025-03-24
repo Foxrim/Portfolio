@@ -8,12 +8,12 @@ export default function Language() {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
-    const storedLanguage = localStorage.getItem('i18nextLng');
+    const storedLanguage = localStorage.getItem("i18nextLng");
     setIsActif(storedLanguage !== "en");
   };
 
   useEffect(() => {
-    const storedLanguage = localStorage.getItem('i18nextLng');
+    const storedLanguage = localStorage.getItem("i18nextLng");
     setIsActif(storedLanguage !== "en");
   }, []);
 
@@ -21,13 +21,13 @@ export default function Language() {
     <div className={styles.language}>
       <p
         className={`${styles.fr} ${isActif && styles.actif}`}
-        onClick={() => changeLanguage('fr')}
+        onClick={() => changeLanguage("fr")}
       >
         Fr
       </p>
       <p
         className={`${!isActif && styles.actif}`}
-        onClick={() => changeLanguage('en')}
+        onClick={() => changeLanguage("en")}
       >
         En
       </p>

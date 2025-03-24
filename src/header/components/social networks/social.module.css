@@ -7,11 +7,11 @@
 
   gap: 1rem;
 
-  @media screen and (min-width: 880px) and (max-width:1480px) {
+  @media screen and (min-width: 880px) and (max-width: 1480px) {
     padding: 0 15vw;
   }
 
-  @media screen and (min-width:1480px) {
+  @media screen and (min-width: 1480px) {
     padding: 0 30%;
     margin-top: 2rem;
   }
@@ -29,17 +29,17 @@
 
     cursor: pointer;
 
-    @media screen and (min-width:880px) {
+    @media screen and (min-width: 880px) {
       margin: auto;
       width: 13rem;
     }
 
     figure {
       height: 30px;
-      
+
       img {
         height: 100%;
-        
+
         @media screen and (min-width: 880px) {
           margin: 0 0 0 -1.5rem;
         }

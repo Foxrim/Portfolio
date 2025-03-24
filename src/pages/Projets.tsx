@@ -1,7 +1,7 @@
 export default function Projets() {
   return (
     <>
-     <h3>Projets</h3>
+      <h3>Projets</h3>
     </>
   );
 }
