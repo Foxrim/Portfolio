@@ -9,6 +9,15 @@
 
   gap: 0.5rem;
 
+  @media screen and (min-width:880px) {
+    max-width: 30rem;
+
+    position: absolute;
+    top: 14rem;
+    left: 62rem;
+    transform: translate(50%,50%);
+  }
+
   .button {
       width: 100%;
   }

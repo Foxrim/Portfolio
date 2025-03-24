@@ -6,4 +6,7 @@
     line-height: 1.4;
 
     cursor: default;
+    @media screen and (min-width:880px) {
+        padding: 2rem 0 0 12vw;
+    }
 }

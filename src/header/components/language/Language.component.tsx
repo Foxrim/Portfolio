@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./language.module.css";
 import { useTranslation } from "react-i18next";
 
 export default function Language() {
-  const [isActif, setIsActif] = useState<boolean>(true);
+  const [isActif, setIsActif] = useState<boolean>();
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
@@ -11,6 +11,11 @@ export default function Language() {
     const storedLanguage = localStorage.getItem('i18nextLng');
     setIsActif(storedLanguage !== "en");
   };
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('i18nextLng');
+    setIsActif(storedLanguage !== "en");
+  }, []);
 
   return (
     <div className={styles.language}>
