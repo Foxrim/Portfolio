@@ -1,0 +1,12 @@
+.presentation {
+  padding: 0 1.5rem;
+
+  cursor: default;
+
+  position: relative;
+  z-index: 10;
+
+  .bold {
+    font-weight: 700;
+  }
+}

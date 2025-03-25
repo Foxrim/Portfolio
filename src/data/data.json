@@ -1,12 +1,124 @@
 {
-    "contacts": [
+  "contacts": [
+    {
+      "name": "Github",
+      "link": "https://github.com/Foxrim"
+    },
+    {
+      "name": "Linkedin",
+      "link": "https://www.linkedin.com/in/flavien-rousseau-444bbb199/"
+    }
+  ],
+
+  "user": {
+    "firstname": "Flavien",
+    "lastname": "Rousseau",
+    "date": "2024-09-23T10:30:00.000Z",
+    "fr": {
+      "job": "développeur full-stack"
+    },
+    "en": {
+      "job": "full-stack developer"
+    }
+  },
+
+  "technologies": {
+    "types": {
+      "Front-End": [
         {
-            "name":"Github",
-            "link":"https://github.com/Foxrim"
+          "name": "HTML5"
         },
         {
-            "name":"Linkedin",
-            "link":"https://www.linkedin.com/in/flavien-rousseau-444bbb199/"
+          "name": " / CSS module"
+        },
+        {
+          "name": " / TypeScript (JavaScript)"
+        },
+        {
+          "name": " / React"
+        },
+        {
+          "name": " / Vite"
         }
-    ]
+      ],
+      "Back-End": [
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": " / Postman"
+        },
+        {
+          "name": " / Express"
+        },
+        {
+          "name": " / Node"
+        },
+        {
+          "name": " / Nest"
+        },
+        {
+          "name": " / Jest"
+        }
+      ],
+      "Soft & Hard Skills": [
+        {
+          "name": "Figma"
+        },
+        {
+          "name": " / Github"
+        },
+        {
+          "name": " / Copilot"
+        },
+        {
+          "name": " / Node"
+        },
+        {
+          "name": " / VS Code"
+        },
+        {
+          "name": " / Agile - Scrum"
+        },
+        {
+          "name": " / Git"
+        }
+      ]
+    }
+  },
+
+  "projects": [
+    {
+      "title": "Pokédule",
+      "image": "",
+      "description": "Issue d'un projet en formation, il s'agit d'un pokédex. L'application est disponible en mobile et desktop.",
+      "github": "",
+      "website": "",
+      "date": ""
+    },
+    {
+      "title": "",
+      "image": "",
+      "description": "",
+      "github": "",
+      "website": "",
+      "date": ""
+    },
+    {
+      "title": "",
+      "image": "",
+      "description": "",
+      "github": "",
+      "website": "",
+      "date": ""
+    },
+    {
+      "title": "",
+      "image": "",
+      "description": "",
+      "github": "",
+      "website": "",
+      "date": ""
+    }
+  ]
 }

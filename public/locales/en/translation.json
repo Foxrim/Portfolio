@@ -1,8 +1,17 @@
 {
-    "about": "About",
-    "projects": "Projects",
-    "contacts": "Contacts",
-    "title": "Full-Stack Developer",
-    "title-part-1": "Full-Stack",
-    "title-part-2": "Developer"
+  "about": "About",
+  "projects": "Projects",
+  "contacts": "Contacts",
+  "title": "Full-Stack Developer",
+  "title-part-1": "Full-Stack",
+  "title-part-2": "Developer",
+  "about-me": "About me",
+  "presentation-part-1": "Hello ! My name is ",
+  "presentation-part-2": ", i'm ",
+  "presentation-part-3": " since ",
+  "presentation-part-4": " years ",
+  "presentation-part-4.1": " year ",
+  "presentation-part-5": "and ",
+  "presentation-part-6": " months",
+  "presentation-part-6.1": " month"
 }
