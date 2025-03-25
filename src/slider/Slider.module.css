@@ -1,0 +1,22 @@
+.sliderContainer {
+    margin: 2rem 0;
+
+    .buttonContainer {
+        width: 100%;
+        margin-top: .5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+
+        button {
+            border: 2px solid var(--border-color-white);
+            border-radius: 50px;
+            height: .9rem;
+            width: 2.5rem;
+            
+            background-color: transparent;
+        }
+    }
+}
