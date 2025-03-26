@@ -1,0 +1,25 @@
+.popup {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    color: var(--font-color-black);
+    background-color: var(--background-color-white);
+    border-radius: 40px;
+
+    cursor: default;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+
+    @media screen and (min-width:880px) {
+        padding: .25rem .5rem;
+        left: 2.5%;
+        transform: translate(0%,0%);
+    }
+}
+
+.visible {
+    opacity: 1;
+}
