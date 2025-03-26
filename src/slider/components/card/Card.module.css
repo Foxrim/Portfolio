@@ -11,8 +11,8 @@
   @media screen and (min-width: 880px) {
     height: 18rem;
     margin: 0 1rem;
+    border: 2px solid var(--border-color-grey);
   }
-
 
   figure {
     position: absolute;
@@ -89,7 +89,19 @@
         text-align: center;
         font-size: 24px;
         border-radius: 50px;
+
+        @media screen and (min-width: 880px) {
+          background-color: var(--background-color-grey);
+        }
       }
     }
+  }
+}
+
+.actif {
+  border: 2px solid var(--border-color-white);
+
+  div nav a {
+    background-color: var(--background-color-white);
   }
 }
