@@ -8,6 +8,11 @@
   overflow: hidden;
   position: relative;
 
+  @media screen and (min-width: 880px) {
+    height: 18rem;
+    margin: 0 1rem;
+  }
+
 
   figure {
     position: absolute;
@@ -52,6 +57,20 @@
 
       max-height: 5.2rem;
       overflow: scroll;
+    }
+
+    p::-webkit-scrollbar {
+      height: 0;
+      width: 4px;
+    }
+
+    p::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    p::-webkit-scrollbar-thumb {
+      background-color: var(--background-color-white);
+      border-radius: 5px;
     }
 
     nav {

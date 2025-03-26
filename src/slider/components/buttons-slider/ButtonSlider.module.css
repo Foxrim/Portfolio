@@ -1,0 +1,40 @@
+.buttonSlider {
+    position: relative;
+    z-index: 20;
+
+    height: 7rem;
+    width: 7rem;
+
+    border-radius: 50%;
+    border: 2px solid var(--border-color-white);
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    @media screen and (max-width: 880px) {
+        display: none;
+    }
+
+    figure {
+        height: 55%;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.buttonPrev {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: auto;
+}
+
+.buttonNext {
+    grid-area: 1 / 3 / 2 / 4;
+    margin: auto;
+    rotate: 180deg;
+}

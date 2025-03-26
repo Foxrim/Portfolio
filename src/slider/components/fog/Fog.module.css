@@ -1,0 +1,17 @@
+.fog {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border: none;
+    z-index: 15;
+}
+
+.fogPrev {
+    grid-area: 1 / 1 / 2 / 2;
+    background: linear-gradient(90deg,var(--background-color-black), transparent);
+}
+
+.fogNext {
+    grid-area: 1 / 3 / 2 / 4;
+    background: linear-gradient(-90deg,var(--background-color-black), transparent);
+}

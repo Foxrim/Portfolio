@@ -3,6 +3,8 @@ import styles from "./Slider.module.css";
 import Card from "./components/card/Card.component";
 import data from "../data/data.json";
 import useSlider from "./hooks/useSlider";
+import ButtonSlider from "./components/buttons-slider/ButtonSlider.component";
+import Fog from "./components/fog/Fog.component";
 
 export default function Slider() {
   const projects = data.projects;
@@ -15,11 +17,15 @@ export default function Slider() {
     handleTouchStart,
     handleTouchMove,
     handleTouchEnd,
-    handleCurrentIndex
+    handleCurrentIndex,
+    handlePrev,
+    handleNext,
   } = useSlider(projects, projectShow);
 
   return (
     <section className={styles.sliderContainer}>
+      <ButtonSlider handlePrev={handlePrev} handleNext={handleNext} />
+      <Fog/>
       <div
         className={styles.slider}
         ref={sliderRef}
@@ -42,7 +48,12 @@ export default function Slider() {
 
       <div className={styles.buttonContainer}>
         {visibleProjects.map((project, index) => (
-          <button type="button" key={`index${index}-${project.title}`} className={index === projectIndex ? styles.active : ""} onClick={() => handleCurrentIndex(index)}/>
+          <button
+            type="button"
+            key={`index${index}-${project.title}`}
+            className={index === projectIndex ? styles.active : ""}
+            onClick={() => handleCurrentIndex(index)}
+          />
         ))}
       </div>
     </section>
