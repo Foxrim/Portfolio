@@ -17,6 +17,7 @@ export default function About() {
         />
       ))}
       <span className={styles.circle} />
+      <footer>©flavien-rousseau</footer>
     </section>
   );
 }

@@ -7,7 +7,6 @@ function App() {
     <>
       <Header />
       <Outlet />
-      <footer>©flavien-rousseau</footer>
     </>
   );
 }

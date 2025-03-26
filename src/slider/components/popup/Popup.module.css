@@ -1,0 +1,19 @@
+.popup {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    color: var(--font-color-black);
+    background-color: var(--background-color-white);
+    border-radius: 40px;
+
+    cursor: default;
+    opacity: 0;
+    transition: 0.1s linear;
+}
+
+.visible {
+    opacity: 1;
+}
