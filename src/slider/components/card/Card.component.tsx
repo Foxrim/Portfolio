@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Popup from "../popup/Popup.component";
 import styles from "./Card.module.css";
-import data from "../../../data/data.json";
 
 type CardContain = {
   title: string;
@@ -9,7 +8,6 @@ type CardContain = {
   description: string;
   github: string | null;
   website: string | null;
-  index:number;
 };
 
 export default function Card({
@@ -18,10 +16,9 @@ export default function Card({
   description,
   github,
   website,
-  index
 }: CardContain) {
   const [showPopup, setShowPopup] = useState<boolean>(false);
-  const projects = data.projects;
+
 
   const handleClick =
     (url: string | null) => (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -38,7 +35,7 @@ export default function Card({
 
   return (
     <>
-      <div className={`${styles.card} ${projects.length % index -1 ? styles.actif : ""}`}>
+      <div className={styles.card}>
         <figure>
           <img src={image} alt={title} />
         </figure>

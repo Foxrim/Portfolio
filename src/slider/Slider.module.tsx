@@ -37,7 +37,6 @@ export default function Slider() {
           visibleProjects.map((project, index) => (
             <Card
               key={index}
-              index={index}
               title={project.title}
               image={project.image}
               description={project.description}
@@ -48,7 +47,7 @@ export default function Slider() {
       </div>
 
       <div className={styles.buttonContainer}>
-        {visibleProjects.map((project, index) => (
+        {projects.map((project, index) => (
           <button
             type="button"
             key={`index${index}-${project.title}`}
