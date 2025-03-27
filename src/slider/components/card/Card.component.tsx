@@ -8,6 +8,7 @@ type CardContain = {
   description: string;
   github: string | null;
   website: string | null;
+  index: number;
 };
 
 export default function Card({
@@ -16,9 +17,10 @@ export default function Card({
   description,
   github,
   website,
+  index,
 }: CardContain) {
   const [showPopup, setShowPopup] = useState<boolean>(false);
-
+  
 
   const handleClick =
     (url: string | null) => (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -35,7 +37,7 @@ export default function Card({
 
   return (
     <>
-      <div className={styles.card}>
+      <div className={`${styles.card} ${index === 1 ? styles.current : styles.notCurrent}`}>
         <figure>
           <img src={image} alt={title} />
         </figure>

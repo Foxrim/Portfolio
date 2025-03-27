@@ -30,10 +30,9 @@ const useSlider = (projects: Card[], projectShow: number) => {
     );
   };
 
-
+  
   //   ANIMATION SLIDER
- 
-
+    
   //   SLIDER TACTILE MOBILE
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     setTouchStartX(e.touches[0].clientX);
@@ -58,10 +57,9 @@ const useSlider = (projects: Card[], projectShow: number) => {
     setTouchStartX(null);
   };
 
-
   // SELECT SLIDE
   const handleCurrentIndex = (index: number) => {
-    setProjectIndex(index)
+    setProjectIndex(index);
   };
 
   return {
@@ -73,7 +71,7 @@ const useSlider = (projects: Card[], projectShow: number) => {
     handleTouchStart,
     handleTouchMove,
     handleTouchEnd,
-    handleCurrentIndex
+    handleCurrentIndex,
   };
 };
 

@@ -37,6 +37,7 @@ export default function Slider() {
           visibleProjects.map((project, index) => (
             <Card
               key={index}
+              index={index}
               title={project.title}
               image={project.image}
               description={project.description}

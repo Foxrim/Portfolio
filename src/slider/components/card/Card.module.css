@@ -98,10 +98,14 @@
   }
 }
 
-.actif {
+.current {
   border: 2px solid var(--border-color-white);
 
   div nav a {
     background-color: var(--background-color-white);
   }
+}
+
+.notCurrent{
+  transform: scale(.9);
 }
