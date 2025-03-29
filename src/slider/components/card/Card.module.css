@@ -4,6 +4,7 @@
 
   border-radius: 40px;
   border: 2px solid var(--border-color-white);
+  transform: scale(.9);
 
   overflow: hidden;
   position: relative;
@@ -100,6 +101,7 @@
 
 .actif {
   border: 2px solid var(--border-color-white);
+  transform: scale(1);
 
   div nav a {
     background-color: var(--background-color-white);
