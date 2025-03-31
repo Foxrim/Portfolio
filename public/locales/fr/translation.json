@@ -12,5 +12,8 @@
   "presentation-part-4": " ans ",
   "presentation-part-4.1": " an ",
   "presentation-part-5": "et ",
-  "presentation-part-6": " mois"
+  "presentation-part-6": " mois",
+  "button": "Envoyer",
+  "legend-message": "Message",
+  "placeholder-message": "Message"
 }
