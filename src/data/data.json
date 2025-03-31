@@ -116,5 +116,59 @@
       "website": "https://portfolio-flavien-rousseau.netlify.app/",
       "date": "2024-12-11T10:30:00.000Z"
     }
+  ],
+
+  "inputs-fr": [
+    {
+      "legend":"Nom",
+      "placeholder": "Nom",
+      "type":"text",
+      "name":"lastname"
+    },
+    {
+      "legend":"Prénom",
+      "placeholder": "Prénom",
+      "type":"text",
+      "name":"firstname"
+    },
+    {
+      "legend":"Email",
+      "placeholder": "Email",
+      "type":"email",
+      "name":"email"
+    },
+    {
+      "legend":"Sujet",
+      "placeholder": "Sujet du mail",
+      "type":"text",
+      "name":"subject"
+    }
+  ],
+
+  "inputs-en": [
+    {
+      "legend":"Lastname",
+      "placeholder": "Lastname",
+      "type":"text",
+      "name":"lastname"
+    },
+    {
+      "legend":"Firstname",
+      "placeholder": "Firstname",
+      "type":"text",
+      "name":"firstname"
+    },
+    {
+      "legend":"Email",
+      "placeholder": "Email",
+      "type":"email",
+      "name":"email"
+    },
+    {
+      "legend":"Subjet Line",
+      "placeholder": "Email subject",
+      "type":"text",
+      "name":"subject"
+    }
   ]
 }

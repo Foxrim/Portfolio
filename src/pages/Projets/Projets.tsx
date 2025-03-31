@@ -1,13 +1,15 @@
+import { useTranslation } from "react-i18next";
 import data from "../../data/data.json";
 import Card from "../../slider/components/card/Card.component";
 import styles from "./Projets.module.css";
 
 export default function Projets() {
   const projects = data.projects;
+  const {t} = useTranslation();
 
   return (
     <section className={styles.projets}>
-      <h3>Projets</h3>
+      <h3>{t('projects')}</h3>
       <div className={styles.cardContainer}>
         {projects.map((project, index) => (
           <Card
