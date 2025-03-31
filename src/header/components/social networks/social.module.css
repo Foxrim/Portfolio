@@ -26,24 +26,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2.5rem;
 
     cursor: pointer;
+
+    transition: all .1s ease-in-out;
 
     @media screen and (min-width: 880px) {
       margin: auto;
       width: 13rem;
     }
 
-    figure {
-      height: 30px;
-
-      img {
-        height: 100%;
-
-        @media screen and (min-width: 880px) {
-          margin: 0 0 0 -1.5rem;
-        }
-      }
+    i {
+      font-size: 30px;
+      color: var(--font-color-grey);
     }
 
     p {
@@ -55,6 +51,16 @@
       @media screen and (max-width: 880px) {
         display: none;
       }
+    }
+  }
+
+  a:hover {
+    background-color: var(--background-color-white);
+    i {
+      color: var(--background-color-black);
+    }
+    p {
+      color: var(--background-color-black);
     }
   }
 }

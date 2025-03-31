@@ -22,5 +22,10 @@
     color: var(--font-color-white);
     text-decoration: none;
     cursor: pointer;
+    transition: all .1s ease-in-out;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
