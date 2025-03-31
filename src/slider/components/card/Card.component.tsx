@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Popup from "../popup/Popup.component";
 import styles from "./Card.module.css";
 import data from "../../../data/data.json";
+import { useLocation } from "react-router-dom";
 
 type CardContain = {
   title: string;
@@ -9,7 +10,7 @@ type CardContain = {
   description: string;
   github: string | null;
   website: string | null;
-  index:number;
+  index: number;
 };
 
 export default function Card({
@@ -18,10 +19,13 @@ export default function Card({
   description,
   github,
   website,
-  index
+  index,
 }: CardContain) {
   const [showPopup, setShowPopup] = useState<boolean>(false);
+  const [isHome, setIsHome] = useState<boolean>();
   const projects = data.projects;
+  const location = useLocation();
+  const path = location.pathname;
 
   const handleClick =
     (url: string | null) => (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -36,9 +40,21 @@ export default function Card({
       }
     };
 
+  useEffect(() => {
+    if (path === "/projets") {
+      setIsHome(false);
+    } else {
+      setIsHome(true);
+    }
+  }, [path]);
+
   return (
     <>
-      <div className={`${styles.card} ${projects.length % index -1 ? styles.actif : ""}`}>
+      <div
+        className={`${styles.card} 
+      ${(projects.length % index) - 1 && isHome ? styles.actif : ""} 
+      ${!isHome ? styles.projetPage : ""}`}
+      >
         <figure>
           <img src={image} alt={title} />
         </figure>
@@ -54,8 +70,22 @@ export default function Card({
             </a>
           </nav>
         </div>
-        <Popup showPopup={showPopup}/>
+        <Popup showPopup={showPopup} />
       </div>
+      {!isHome && (
+        <>
+          <div className={styles.nav}>
+            <a href={github || ""} onClick={handleClick(github)}>
+              <p>Github</p>
+              <i className="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href={website || ""} onClick={handleClick(website)}>
+              <p>Site</p>
+              <i className="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </>
+      )}
     </>
   );
 }
