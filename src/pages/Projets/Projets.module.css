@@ -1,0 +1,69 @@
+.projets {
+  max-width: 100vw;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  h3 {
+    margin-left: 2rem;
+    margin: 5rem 0;
+    cursor: default;
+
+    @media screen and (min-width: 880px) {
+        margin-left: 11vw;
+    }
+
+    @media screen and (min-width: 1480px) {
+        margin-left: 13vw;
+    }
+  }
+
+  .cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 880px) {
+      .card,
+      nav {
+        display: none;
+      }
+
+      .card {
+        margin: auto;
+      }
+
+      display: grid;
+      grid-template-columns: 70% 30%;
+      padding: 0 13vw;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+    transform: translate(0%, 0%);
+
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+    border: 2px solid var(--style-color);
+
+    @media screen and (min-width: 880px) {
+      top: 2rem;
+      right: 6rem;
+      transform: translate(50%, 0%);
+    }
+
+    @media screen and (min-width: 1480px) {
+      height: 50rem;
+      width: 50rem;
+      top: 2rem;
+      right: 6rem;
+      transform: translate(120%, 20%);
+    }
+  }
+}
