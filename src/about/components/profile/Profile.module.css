@@ -1,0 +1,27 @@
+.profile {
+  display: none;
+
+  @media screen and (min-width: 880px) {
+    display: block;
+    position: relative;
+    z-index: 20;
+
+    grid-area: 2 / 2 / 3 / 3;
+    margin: auto;
+
+    figure {
+      height: 35rem;
+
+      img {
+        height: 100%;
+        width: 20rem;
+        object-fit: cover;
+        border-radius: 40px;
+
+        @media screen and (min-width: 1480px) {
+          width: 25rem;
+        }
+      }
+    }
+  }
+}

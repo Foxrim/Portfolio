@@ -1,12 +1,120 @@
 {
-    "contacts": [
+  "contacts": [
+    {
+      "name": "Github",
+      "link": "https://github.com/Foxrim"
+    },
+    {
+      "name": "Linkedin",
+      "link": "https://www.linkedin.com/in/flavien-rousseau-444bbb199/"
+    }
+  ],
+
+  "user": {
+    "firstname": "Flavien",
+    "lastname": "Rousseau",
+    "date": "2024-09-23T10:30:00.000Z",
+    "photo" : "./images/photo-profile.webp",
+    "fr": {
+      "job": "développeur full-stack"
+    },
+    "en": {
+      "job": "full-stack developer"
+    }
+  },
+
+  "technologies": {
+    "types": {
+      "Front-End": [
         {
-            "name":"Github",
-            "link":"https://github.com/Foxrim"
+          "name": "HTML5"
         },
         {
-            "name":"Linkedin",
-            "link":"https://www.linkedin.com/in/flavien-rousseau-444bbb199/"
+          "name": " / CSS module"
+        },
+        {
+          "name": " / TypeScript (JavaScript)"
+        },
+        {
+          "name": " / React"
+        },
+        {
+          "name": " / Vite"
         }
-    ]
+      ],
+      "Back-End": [
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": " / Postman"
+        },
+        {
+          "name": " / Express"
+        },
+        {
+          "name": " / Node"
+        },
+        {
+          "name": " / Nest"
+        },
+        {
+          "name": " / Jest"
+        }
+      ],
+      "Soft & Hard Skills": [
+        {
+          "name": "Figma"
+        },
+        {
+          "name": " / Github"
+        },
+        {
+          "name": " / Copilot"
+        },
+        {
+          "name": " / Node"
+        },
+        {
+          "name": " / VS Code"
+        },
+        {
+          "name": " / Agile - Scrum"
+        },
+        {
+          "name": " / Git"
+        }
+      ]
+    }
+  },
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Pokédule",
+      "image": "./images/pokedule.webp",
+      "description": "Issue d'un projet en formation, il s'agit d'un pokédex. L'application est disponible en mobile et desktop.",
+      "github": "https://github.com/Foxrim/Pokedule",
+      "website": "https://pokedule.vercel.app/",
+      "date": "2024-11-29T10:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Woody Gallery",
+      "image": "./images/woody-gallery.webp",
+      "description": "C'est mon dernier projet réalisé en formation concrétisant mon apprentissage.",
+      "github": "https://github.com/WildCodeSchool-2024-09/JS-RemoteFR-Vendangeurs-P3-Woody-Gallery",
+      "website": null,
+      "date": "2025-02-20T10:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Ancien Portfolio",
+      "image": "./images/portofolio.webp",
+      "description": "Mon premier portfolio, il contient des projets non disponible ici.",
+      "github": "https://github.com/Foxrim/Portofolio",
+      "website": "https://portfolio-flavien-rousseau.netlify.app/",
+      "date": "2024-12-11T10:30:00.000Z"
+    }
+  ]
 }

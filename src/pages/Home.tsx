@@ -1,7 +1,11 @@
+import About from "../about/About.module";
+import Slider from "../slider/Slider.module";
+
 export default function Home() {
   return (
     <>
-      <h3>Home</h3>
+      <Slider />
+      <About />
     </>
   );
 }

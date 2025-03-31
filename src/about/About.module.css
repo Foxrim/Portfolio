@@ -1,0 +1,49 @@
+.about {
+  position: relative;
+  max-width: 100vw;
+  overflow: hidden;
+
+  @media screen and (min-width: 880px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 65% 5%;
+    gap: 3rem;
+    padding: 0 13vw;
+    margin-bottom: 2rem;
+
+    footer {
+      grid-area: 3 / 1 / 4 / 3;
+      margin: auto;
+      margin-top: 5rem;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+    transform: translate(0%, 0%);
+
+    height: 50rem;
+    width: 50rem;
+    border-radius: 50%;
+    border: 2px solid var(--style-color);
+
+    @media screen and (min-width: 880px) {
+      top: 2rem;
+      right: 6rem;
+      transform: translate(50%, 0%);
+    }
+
+    @media screen and (min-width: 1480px) {
+      top: 2rem;
+      right: 6rem;
+      transform: translate(120%, 0%);
+    }
+  }
+
+  .techContainer {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: auto;
+  }
+}

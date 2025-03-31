@@ -1,0 +1,39 @@
+.cardTechnologies {
+  border-radius: 40px;
+  border: 2px solid var(--border-color-white);
+  margin: 1.5rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+
+  line-height: 1;
+
+  position: relative;
+  z-index: 10;
+
+  h3 {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 24px;
+    font-weight: var(--font-weight);
+
+    cursor: default;
+  }
+
+  .technologiesContainer {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    p {
+      margin: 0;
+      white-space: pre;
+      cursor: default;
+    }
+  }
+}
+
+.frontEnd {
+  background-color: var(--background-color-white);
+  color: var(--font-color-black);
+  font-weight: var(--font-weight);
+}
