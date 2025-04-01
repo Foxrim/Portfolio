@@ -31,7 +31,7 @@ export default function Presentation() {
 
   return (
     <section className={styles.presentation}>
-      <h2>{t("about-me")}</h2>
+      <h3>{t("about-me")}</h3>
       <p>
         {t("presentation-part-1")}
         {data.user.firstname}

@@ -5,16 +5,18 @@
   position: relative;
 
   h3 {
-    margin-left: 2rem;
-    margin: 5rem 0;
+    margin: 2rem 0;
+    font-size: 24px;
     cursor: default;
+    font-weight: var(--font-weight);
 
     @media screen and (min-width: 880px) {
-        margin-left: 11vw;
+      font-size: 30px;
+      padding: 0 12vw;
     }
 
     @media screen and (min-width: 1480px) {
-        margin-left: 13vw;
+      font-size: 30px;
     }
   }
 

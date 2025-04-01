@@ -4,7 +4,7 @@ import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import Projets from "./pages/Projets/Projets.tsx";
-import Contacts from "./pages/Contacts.tsx";
+import Contacts from "./pages/Contacts/Contacts.tsx";
 
 import "./i18n";
 

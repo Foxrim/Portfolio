@@ -1,0 +1,73 @@
+.form {
+  width: 100%;
+
+  @media screen and (min-width: 880px) {
+    padding: 0 20vw;
+  }
+
+  .message {
+    border: 2px solid var(--border-color-white);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 0.2rem 0;
+    margin: 0.5rem 0;
+
+    legend {
+      margin-left: 1.5rem;
+      padding: 0 0.5rem;
+      cursor: default;
+    }
+
+    textarea {
+      width: 91%;
+      height: 15rem;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      margin: -0.5rem 1rem 0.25rem 1.85rem;
+      color: var(--font-color-white);
+      resize: none;
+    }
+
+    textarea:focus-visible {
+      outline: none;
+    }
+
+    textarea:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px var(--background-color-black) inset;
+      -webkit-text-fill-color: var(--font-color-white);
+    }
+  }
+
+  .sendButton {
+    width: 100%;
+    font-size: 24px;
+    border: 2px solid var(--border-color-white);
+    background-color: var(--background-color-white);
+    border-radius: 50px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .sendButton:hover {
+    border: 2px solid var(--border-color-white);
+    background-color: transparent;
+    color: var(--font-color-white);
+  }
+}
+
+.emailNotValid {
+  font-size: 20px;
+  position: absolute;
+  top: 30.9%;
+  left: 40.75%;
+  transform: translate(0%, 0%);
+  background-color: var(--background-color-white);
+  color: var(--font-color-black);
+  padding: .25rem 1rem;
+  border-radius: 50px;
+}

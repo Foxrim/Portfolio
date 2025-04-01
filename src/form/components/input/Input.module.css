@@ -1,0 +1,35 @@
+.input {
+    border: 2px solid var(--border-color-white);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: .2rem 0;
+    margin: .5rem 0;
+
+    legend {
+        margin-left: 1.5rem;
+        padding: 0 .5rem;
+        cursor: default;
+    }
+
+    input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        margin: -.5rem 1rem .25rem 1.85rem;  
+        
+        color: var(--font-color-white);
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+    
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px var(--background-color-black) inset;
+        -webkit-text-fill-color: var(--font-color-white);
+    }
+}
