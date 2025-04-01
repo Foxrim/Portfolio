@@ -123,25 +123,33 @@
       "legend":"Nom",
       "placeholder": "Nom",
       "type":"text",
-      "name":"lastname"
+      "name":"lastname",
+      "minLength": 2,
+      "maxLenght": 20
     },
     {
       "legend":"Prénom",
       "placeholder": "Prénom",
       "type":"text",
-      "name":"firstname"
+      "name":"firstname",
+      "minLength": 2,
+      "maxLenght": 20
     },
     {
       "legend":"Email",
       "placeholder": "Email",
       "type":"email",
-      "name":"email"
+      "name":"email",
+      "minLength": 6,
+      "maxLenght": 150
     },
     {
       "legend":"Sujet",
       "placeholder": "Sujet du mail",
       "type":"text",
-      "name":"subject"
+      "name":"subject",
+      "minLength": 5,
+      "maxLenght": 50
     }
   ],
 
@@ -150,25 +158,33 @@
       "legend":"Lastname",
       "placeholder": "Lastname",
       "type":"text",
-      "name":"lastname"
+      "name":"lastname",
+      "minLength": 2,
+      "maxLenght": 20
     },
     {
       "legend":"Firstname",
       "placeholder": "Firstname",
       "type":"text",
-      "name":"firstname"
+      "name":"firstname",
+      "minLength": 2,
+      "maxLenght": 20
     },
     {
       "legend":"Email",
       "placeholder": "Email",
       "type":"email",
-      "name":"email"
+      "name":"email",
+      "minLength": 6,
+      "maxLenght": 150
     },
     {
       "legend":"Subjet Line",
       "placeholder": "Email subject",
       "type":"text",
-      "name":"subject"
+      "name":"subject",
+      "minLength": 5,
+      "maxLenght": 50
     }
   ]
 }

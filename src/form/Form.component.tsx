@@ -11,7 +11,7 @@ export default function Form() {
   const inputsFr = data["inputs-fr"];
   const { t } = useTranslation();
 
-  const { handleChange, handleSubmit } = useForm();
+  const { handleChange, handleSubmit, emailValid } = useForm();
 
   useEffect(() => {
     setIsFrench(t("button") === "Envoyer");
@@ -28,6 +28,8 @@ export default function Form() {
               legend={input.legend}
               placeholder={input.placeholder}
               type={input.type}
+              minLenght={input.minLength}
+              maxLenght={input.maxLenght}
               onChange={handleChange}
             />
           ))
@@ -39,6 +41,8 @@ export default function Form() {
               legend={input.legend}
               placeholder={input.placeholder}
               type={input.type}
+              minLenght={input.minLength}
+              maxLenght={input.maxLenght}
               onChange={handleChange}
             />
           ))}
@@ -49,10 +53,15 @@ export default function Form() {
           name="message"
           placeholder={t("placeholder-message")}
           maxLength={250}
+          minLength={10}
           onChange={handleChange}
+          required
         ></textarea>
       </fieldset>
       <button className={styles.sendButton}>{t("button")}</button>
+      {!emailValid && (
+        <p className={styles.emailNotValid}>Veuillez entrer une email valide !</p>
+      ) }
     </form>
   );
 }

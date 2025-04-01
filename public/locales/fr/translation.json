@@ -15,5 +15,6 @@
   "presentation-part-6": " mois",
   "button": "Envoyer",
   "legend-message": "Message",
-  "placeholder-message": "Message"
+  "placeholder-message": "Message",
+  "errorMessageEmail": "Veuillez entrer une email valide"
 }
