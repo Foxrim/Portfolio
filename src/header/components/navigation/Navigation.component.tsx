@@ -7,7 +7,7 @@ export default function Navigation() {
 
   return (
     <nav className={styles.navigation}>
-      <NavLink to="/home">
+      <NavLink to="/">
         <p>{t("about")}</p>
       </NavLink>
       <NavLink to="/projets">
