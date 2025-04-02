@@ -62,10 +62,10 @@ export default function Card({
           <h3>{title}</h3>
           <p>{description}</p>
           <nav>
-            <a href={github || ""} onClick={handleClick(github)}>
+            <a href={github || ""} onClick={handleClick(github)} target="_blank">
               Github
             </a>
-            <a href={website || ""} onClick={handleClick(website)}>
+            <a href={website || ""} onClick={handleClick(website)} target="_blank">
               Site
             </a>
           </nav>
@@ -75,11 +75,11 @@ export default function Card({
       {!isHome && (
         <>
           <div className={styles.nav}>
-            <a href={github || ""} onClick={handleClick(github)}>
+            <a href={github || ""} onClick={handleClick(github)} target="_blank">
               <p>Github</p>
               <i className="fa-solid fa-arrow-right"></i>
             </a>
-            <a href={website || ""} onClick={handleClick(website)}>
+            <a href={website || ""} onClick={handleClick(website)} target="_blank">
               <p>Site</p>
               <i className="fa-solid fa-arrow-right"></i>
             </a>
