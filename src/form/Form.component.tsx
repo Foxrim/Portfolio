@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./Form.module.css";
 import useForm from "./hook/useForm";
+import Message from "./components/message/Message.component";
 
 export default function Form() {
   const [isFrench, setIsFrench] = useState<boolean>();
@@ -11,7 +12,7 @@ export default function Form() {
   const inputsFr = data["inputs-fr"];
   const { t } = useTranslation();
 
-  const { handleChange, handleSubmit, emailValid } = useForm();
+  const { handleChange, handleSubmit, successMessage, errorMessage, closeModal, formValue } = useForm();
 
   useEffect(() => {
     setIsFrench(t("button") === "Envoyer");
@@ -31,6 +32,7 @@ export default function Form() {
               minLenght={input.minLength}
               maxLenght={input.maxLenght}
               onChange={handleChange}
+              formValue={formValue}
             />
           ))
         : inputsEn.map((input, index) => (
@@ -44,6 +46,7 @@ export default function Form() {
               minLenght={input.minLength}
               maxLenght={input.maxLenght}
               onChange={handleChange}
+              formValue={formValue}
             />
           ))}
       <fieldset className={styles.message}>
@@ -54,14 +57,15 @@ export default function Form() {
           placeholder={t("placeholder-message")}
           maxLength={250}
           minLength={10}
+          value={formValue.message}
           onChange={handleChange}
           required
         ></textarea>
       </fieldset>
       <button className={styles.sendButton}>{t("button")}</button>
-      {!emailValid && (
-        <p className={styles.emailNotValid}>Veuillez entrer une email valide !</p>
-      ) }
+          {(successMessage || errorMessage) && (
+            <Message successMessage={successMessage} errorMessage={errorMessage} closeModal={closeModal} />
+          )}
     </form>
   );
 }
