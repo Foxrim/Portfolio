@@ -1,12 +1,23 @@
-.name {
-  font-size: 30px;
-  font-weight: var(--font-weight);
-  padding-left: 2rem;
-  max-width: 7ch;
-  line-height: 1.4;
+.nameTitle {
+  position: relative;
+  z-index: 20;
+  width: 5rem;
 
-  cursor: default;
-  @media screen and (min-width: 880px) {
-    padding: 2rem 0 0 12vw;
+  a {
+    text-decoration: none;
+
+    h1 {
+      color: var(--font-color-white);
+      max-width: 7ch;
+      line-height: 1.4;
+      padding-left: 2rem;
+      font-size: 30px;
+      font-weight: var(--font-weight);
+      cursor: pointer;
+
+      @media screen and (min-width: 880px) {
+        padding: 2rem 0 0 12vw;
+      }
+    }
   }
 }

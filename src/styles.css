@@ -10,6 +10,7 @@ body {
   font-weight: var(--font-weight);
   font-style: var(--regular-style);
   color: var(--font-color-white);
+  user-select: none;
 
   p {
     font-size: 24px;
@@ -31,6 +32,24 @@ body {
     z-index: 10;
   }
 }
+
+/* SCROLL BODY */
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--border-color-grey);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--background-color-white); 
+  border-radius: 20px; 
+  border: 3px solid var(--border-color-grey);
+}
+
+
 
 :root {
   /* BACKGROUND */
