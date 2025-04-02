@@ -90,9 +90,9 @@ const useForm = () => {
     if (
       sanitisedLastname.length < 2 ||
       sanitisedFirstname.length < 2 ||
-      sanitisedEmail.length < 6 ||
-      sanitisedSubject.length < 5 ||
-      sanitisedMessage.length < 15
+      sanitisedEmail.length < 2 ||
+      sanitisedSubject.length < 2 ||
+      sanitisedMessage.length < 2
     ) {
       console.error("Bon... Faut arrêter de toucher à tous aussi !");
       setErrorMessage("Bon... Faut arrêter de toucher à tous aussi !");
