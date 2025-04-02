@@ -12,7 +12,14 @@ export default function Form() {
   const inputsFr = data["inputs-fr"];
   const { t } = useTranslation();
 
-  const { handleChange, handleSubmit, successMessage, errorMessage, closeModal, formValue } = useForm();
+  const {
+    handleChange,
+    handleSubmit,
+    successMessage,
+    errorMessage,
+    closeModal,
+    formValue,
+  } = useForm();
 
   useEffect(() => {
     setIsFrench(t("button") === "Envoyer");
@@ -63,9 +70,13 @@ export default function Form() {
         ></textarea>
       </fieldset>
       <button className={styles.sendButton}>{t("button")}</button>
-          {(successMessage || errorMessage) && (
-            <Message successMessage={successMessage} errorMessage={errorMessage} closeModal={closeModal} />
-          )}
+      {(successMessage || errorMessage) && (
+        <Message
+          successMessage={successMessage}
+          errorMessage={errorMessage}
+          closeModal={closeModal}
+        />
+      )}
     </form>
   );
 }
