@@ -60,14 +60,3 @@
   }
 }
 
-.emailNotValid {
-  font-size: 20px;
-  position: absolute;
-  top: 30.9%;
-  left: 40.75%;
-  transform: translate(0%, 0%);
-  background-color: var(--background-color-white);
-  color: var(--font-color-black);
-  padding: .25rem 1rem;
-  border-radius: 50px;
-}

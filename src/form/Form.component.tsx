@@ -11,7 +11,7 @@ export default function Form() {
   const inputsFr = data["inputs-fr"];
   const { t } = useTranslation();
 
-  const { handleChange, handleSubmit, emailValid } = useForm();
+  const { handleChange, handleSubmit } = useForm();
 
   useEffect(() => {
     setIsFrench(t("button") === "Envoyer");
@@ -59,9 +59,6 @@ export default function Form() {
         ></textarea>
       </fieldset>
       <button className={styles.sendButton}>{t("button")}</button>
-      {!emailValid && (
-        <p className={styles.emailNotValid}>Veuillez entrer une email valide !</p>
-      ) }
     </form>
   );
 }
