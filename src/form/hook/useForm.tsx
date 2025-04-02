@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import DOMPurify from "dompurify";
 import emailjs from "@emailjs/browser";
 
@@ -22,12 +22,21 @@ const useForm = () => {
   });
   const [successMessage, setSuccessMessage] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [timer, setTimer] = useState<number>(4000);
+
+  const timerIdRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     emailjs.init({
       publicKey: `${import.meta.env.VITE_PUBLIC_KEY}`,
     });
   }, []);
+
+  const closeModal = () => {
+    setTimer(4000);
+    setSuccessMessage("");
+    setErrorMessage("");
+  }
 
   const handleChange = (
     e:
@@ -55,6 +64,10 @@ const useForm = () => {
     if (!isValidEmail(sanitisedEmail)) {
       console.error("Veuillez entrez un email valide");
       setErrorMessage("Veuillez entrer un email valide");
+      clearTimeout(timerIdRef.current || undefined);
+      timerIdRef.current = setTimeout(() => {
+        setErrorMessage("");
+      }, timer);
       return;
     }
 
@@ -67,18 +80,26 @@ const useForm = () => {
     ) {
       console.error("Merci de remplir tous les champs requis !");
       setErrorMessage("Merci de remplir tous les champs requis !");
+      clearTimeout(timerIdRef.current || undefined);
+      timerIdRef.current = setTimeout(() => {
+        setErrorMessage("");
+      }, timer);
       return;
     }
 
     if (
       sanitisedLastname.length < 2 ||
       sanitisedFirstname.length < 2 ||
-      sanitisedEmail.length < 9 ||
-      sanitisedSubject.length < 3 ||
+      sanitisedEmail.length < 6 ||
+      sanitisedSubject.length < 5 ||
       sanitisedMessage.length < 15
     ) {
       console.error("Bon... Faut arrêter de toucher à tous aussi !");
       setErrorMessage("Bon... Faut arrêter de toucher à tous aussi !");
+      clearTimeout(timerIdRef.current || undefined);
+      timerIdRef.current = setTimeout(() => {
+        setErrorMessage("");
+      }, timer);
       return;
     }
 
@@ -86,7 +107,7 @@ const useForm = () => {
       const templateParams = {
         lastname: sanitisedLastname,
         firstname: sanitisedFirstname,
-        name: sanitisedFirstname + sanitisedLastname,
+        name: sanitisedFirstname + " " + sanitisedLastname,
         email: sanitisedEmail,
         subject: sanitisedSubject,
         message: sanitisedMessage,
@@ -101,6 +122,10 @@ const useForm = () => {
         .then((response) => {
           console.error("yes", response.status, response.text);
           setSuccessMessage("Email envoyé avec succès !");
+          clearTimeout(timerIdRef.current || undefined);
+          timerIdRef.current = setTimeout(() => {
+            setSuccessMessage("");
+          }, timer);
           setFormValue({
             lastname: "",
             firstname: "",
@@ -112,12 +137,23 @@ const useForm = () => {
         })
         .catch((error) => {
           console.error("Erreur lors de l'envoi de l'email :", error);
-          setErrorMessage("Une erreur s'est produite lors de l'envoi de l'email. Veuillez réessayer plus tard.");
+          setErrorMessage(
+            "Une erreur s'est produite lors de l'envoi de l'email. Veuillez réessayer plus tard."
+          );
+          clearTimeout(timerIdRef.current || undefined);
+          timerIdRef.current = setTimeout(() => {
+            setErrorMessage("");
+          }, timer);
         });
-
     } catch (err) {
       console.error("Une erreur est survenue durant le processus :", err);
-      setErrorMessage("Une erreur est survenue lors du traitement du formulaire. Veuillez réessayer plus tard.");
+      setErrorMessage(
+        "Une erreur est survenue lors du traitement du formulaire. Veuillez réessayer plus tard."
+      );
+      clearTimeout(timerIdRef.current || undefined);
+      timerIdRef.current = setTimeout(() => {
+        setErrorMessage("");
+      }, timer);
     }
   };
 
@@ -130,7 +166,9 @@ const useForm = () => {
     handleChange,
     handleSubmit,
     successMessage,
-    errorMessage
+    errorMessage,
+    closeModal,
+    formValue
   };
 };
 
