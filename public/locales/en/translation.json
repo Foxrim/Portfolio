@@ -17,5 +17,6 @@
   "button": "Send",
   "legend-message": "Message",
   "placeholder-message": "Message",
-  "errorMessageEmail": "Please enter a valid email address"
+  "errorMessageEmail": "Please enter a valid email address",
+  "situation": "Available for an internship, work-study or job offer."
 }

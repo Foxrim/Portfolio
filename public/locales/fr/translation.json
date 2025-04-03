@@ -16,5 +16,6 @@
   "button": "Envoyer",
   "legend-message": "Message",
   "placeholder-message": "Message",
-  "errorMessageEmail": "Veuillez entrer une email valide"
+  "errorMessageEmail": "Veuillez entrer une email valide",
+  "situation": "Disponible pour une offre de stage, d'alternance ou d'emploie."
 }
