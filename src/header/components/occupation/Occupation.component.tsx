@@ -24,7 +24,7 @@ export default function Occupation() {
           <h2 className={styles.title_desktop_2}>{t("title-part-2")}</h2>
         </>
       )}
-      <p>Je n'ai aucune inspiration</p>
+      <p>{t('situation')}</p>
     </section>
   );
 }
