@@ -60,6 +60,12 @@
         },
         {
           "name": " / Jest"
+        }, 
+        {
+          "name": " / Sequelize"
+        },
+        {
+          "name": " / SQLite"
         }
       ],
       "Soft & Hard Skills": [
