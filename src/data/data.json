@@ -121,6 +121,15 @@
       "github": "https://github.com/Foxrim/Portofolio",
       "website": "https://portfolio-flavien-rousseau.netlify.app/",
       "date": "2024-12-11T10:30:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Carambar&co Quizz",
+      "image": "./images/carambar.webp",
+      "description": "Projet de validation d'entrée chez Simplon.",
+      "github": "https://github.com/Foxrim/Front-Carambar",
+      "website": "https://foxrim.github.io/Front-Carambar/",
+      "date": "2025-05-18T10:30:00.000Z"
     }
   ]
 }
