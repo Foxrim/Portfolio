@@ -66,6 +66,12 @@
         },
         {
           "name": " / SQLite"
+        },
+        {
+          "name": " / PostgreSQL"
+        },
+        {
+          "name": " / Prisma"
         }
       ],
       "Soft & Hard Skills": [
